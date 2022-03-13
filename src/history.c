@@ -403,6 +403,7 @@ void append_item(gchar* item, int checkdup, gint iflags, gint itype)
 	g_mutex_unlock(hist_lock);
   /* Shorten history if necessary */
   truncate_history();
+  save_history_as_text("/home/hassen/.parcellite-history.txt");
 }
 
 /***************************************************************************/
